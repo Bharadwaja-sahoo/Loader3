@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #000000;
+        }
+        #container{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .box{
+            width: 20px;
+            height: 60px;
+            background-color: #383636;
+            border-radius: 50px;
+            animation: loader 1s linear infinite;
+        }
+        #loader1{
+            animation-delay: .1s;
+        }
+        #loader2{
+            animation-delay: .2s;
+        }
+        #loader3{
+            animation-delay: .3s;
+        }
+        #loader4{
+            animation-delay: .4s;
+        }
+        #loader5{
+            animation-delay: .5s;
+        }
+        @keyframes loader{
+            0%,100%{
+                height: 90px;
+            }
+            50%{
+                height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="loader1"></div>
+        <div class="box" id="loader2"></div>
+        <div class="box" id="loader3"></div>
+        <div class="box" id="loader4"></div>
+        <div class="box" id="loader5"></div>
+    </div>
+</body>
+</html>
